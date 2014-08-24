@@ -1,0 +1,14 @@
+CREATE TABLE silos (
+    id INT,
+    name VARCHAR(50)
+);
+
+CREATE TABLE silos_levels (
+    id INT,
+    silo INT,
+    percent_full INT
+);
+
+insert into silos (id, name) values (1, "Oat Silo 1");
+
+insert into silos_levels (id, silo) values (1, 1, 81);
